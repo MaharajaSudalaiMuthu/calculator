@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-wrapper">
+            <!-- Header -->
+            <div class="calculator-header">
+                <div class="logo">
+                    <i class="fas fa-calculator"></i>
+                    <h1>Modern Calculator</h1>
+                </div>
+                <div class="keyboard-status">
+                    <i class="fas fa-keyboard"></i>
+                    <span>Keyboard Support Enabled</span>
+                </div>
+            </div>
+
+            <!-- Calculator Display -->
+            <div class="calculator-display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+            </div>
+
+            <!-- Calculator Buttons -->
+            <div class="calculator-buttons">
+                <!-- Row 1 -->
+                <button class="btn btn-clear" data-action="clear">
+                    <span>AC</span>
+                </button>
+                <button class="btn btn-delete" data-action="delete">
+                    <i class="fas fa-backspace"></i>
+                </button>
+                <button class="btn btn-operator" data-operator="%">
+                    <span>%</span>
+                </button>
+                <button class="btn btn-operator" data-operator="÷">
+                    <span>÷</span>
+                </button>
+
+                <!-- Row 2 -->
+                <button class="btn btn-number" data-number="7">
+                    <span>7</span>
+                </button>
+                <button class="btn btn-number" data-number="8">
+                    <span>8</span>
+                </button>
+                <button class="btn btn-number" data-number="9">
+                    <span>9</span>
+                </button>
+                <button class="btn btn-operator" data-operator="×">
+                    <span>×</span>
+                </button>
+
+                <!-- Row 3 -->
+                <button class="btn btn-number" data-number="4">
+                    <span>4</span>
+                </button>
+                <button class="btn btn-number" data-number="5">
+                    <span>5</span>
+                </button>
+                <button class="btn btn-number" data-number="6">
+                    <span>6</span>
+                </button>
+                <button class="btn btn-operator" data-operator="-">
+                    <span>−</span>
+                </button>
+
+                <!-- Row 4 -->
+                <button class="btn btn-number" data-number="1">
+                    <span>1</span>
+                </button>
+                <button class="btn btn-number" data-number="2">
+                    <span>2</span>
+                </button>
+                <button class="btn btn-number" data-number="3">
+                    <span>3</span>
+                </button>
+                <button class="btn btn-operator" data-operator="+">
+                    <span>+</span>
+                </button>
+
+                <!-- Row 5 -->
+                <button class="btn btn-number btn-zero" data-number="0">
+                    <span>0</span>
+                </button>
+                <button class="btn btn-number" data-number=".">
+                    <span>.</span>
+                </button>
+                <button class="btn btn-equals">
+                    <span>=</span>
+                </button>
+            </div>
+
+            <!-- Instructions -->
+            <div class="instructions">
+                <div class="instruction-item">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <span>Click buttons or use keyboard</span>
+                </div>
+                <div class="instruction-item">
+                    <i class="fas fa-keyboard"></i>
+                    <span>Press Esc to clear, Enter for equals</span>
+                </div>
+            </div>
+
+            <!-- Features List -->
+            <div class="features">
+                <h3><i class="fas fa-star"></i> Features</h3>
+                <ul>
+                    <li>All arithmetic operations (+, −, ×, ÷)</li>
+                    <li>Real-time calculation display</li>
+                    <li>Full keyboard support</li>
+                    <li>Responsive design</li>
+                    <li>Modern glassmorphism UI</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
